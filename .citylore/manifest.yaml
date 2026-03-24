@@ -1,0 +1,7 @@
+version: "0.1"
+node_id: "realRoc/citylore"
+repo: "https://github.com/realRoc/citylore"
+domain: "citylore.xyz"
+visibility: "public"
+mode: "mvp-text-first"
+description: "GitHub-native local-life knowledge node with structured text storage."
