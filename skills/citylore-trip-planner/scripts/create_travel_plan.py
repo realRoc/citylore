@@ -49,6 +49,16 @@ def display_travel_mode(travel_mode: str | None) -> str | None:
     return travel_mode
 
 
+def infer_lodging_kind(name: str | None, district: str | None, explicit_kind: str | None) -> str | None:
+    if explicit_kind:
+        return explicit_kind
+    if name:
+        return "hotel"
+    if district:
+        return "district"
+    return None
+
+
 def load_profile(repo_root: Path, profile_id: str | None) -> dict | None:
     if not profile_id:
         return None
@@ -62,6 +72,7 @@ def planning_context(profile: dict | None, requested_mode: str | None) -> dict:
     context = {
         "profile_id": None,
         "travel_mode": requested_mode,
+        "planning_style": "balanced",
         "late_start": False,
         "pace": "balanced",
         "prefer_evening": False,
@@ -109,6 +120,7 @@ def planning_context(profile: dict | None, requested_mode: str | None) -> dict:
         {
             "profile_id": profile.get("contributor_id"),
             "travel_mode": travel_mode,
+            "planning_style": "balanced",
             "late_start": late_start,
             "pace": pace,
             "prefer_evening": prefer_evening,
@@ -121,6 +133,7 @@ def planning_context(profile: dict | None, requested_mode: str | None) -> dict:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build a CityLore travel plan from canonical places.")
     parser.add_argument("--repo-root", help="Override CityLore repo root.")
+    parser.add_argument("--plan-id", help="Fixed plan file stem for overwrite-friendly updates.")
     parser.add_argument("--city", required=True)
     parser.add_argument("--days", type=int, required=True)
     parser.add_argument("--nights", type=int, default=0)
@@ -130,6 +143,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--source-ref", action="append", default=[])
     parser.add_argument("--profile-id", help="Contributor profile id, e.g. realRoc.")
     parser.add_argument("--travel-mode", choices=["solo", "companion"], help="Override profile travel mode.")
+    parser.add_argument("--planning-style", choices=["classic", "balanced", "local"], default="balanced")
+    parser.add_argument("--stay-name", help="Fixed hotel or stay anchor name.")
+    parser.add_argument("--stay-district", help="Preferred stay district or business area.")
+    parser.add_argument(
+        "--stay-kind",
+        choices=["hotel", "district", "commercial-area", "neighborhood"],
+        help="Explicit stay anchor type.",
+    )
     parser.add_argument("--json", action="store_true")
     return parser.parse_args()
 
@@ -174,6 +195,33 @@ def day_slots(days: int, nights: int, context: dict | None = None) -> list[list[
     return slots
 
 
+def style_score(item: dict, preferred_slot: str, planning_style: str) -> int:
+    tags = set(item.get("tags", []))
+    category = item.get("category")
+    score = 0
+    if planning_style == "local":
+        if preferred_slot == "evening":
+            score += 2
+        if category in {"food", "restaurant", "walk"}:
+            score += 2
+        if category == "cafe":
+            score += 3
+        if category == "market":
+            score += 2
+        if category in {"museum", "attraction"}:
+            score -= 2
+        if {"local", "snack", "street", "night-walk"} & tags:
+            score += 2
+        if {"design", "gallery", "specialty-coffee"} & tags:
+            score += 1
+    if planning_style == "classic":
+        if category in {"museum", "attraction"}:
+            score += 2
+        if category in {"food", "restaurant", "cafe"}:
+            score -= 1
+    return score
+
+
 def select_places(
     catalog: dict,
     city: str,
@@ -196,6 +244,8 @@ def select_places(
     scored = []
     for item in places:
         preferred_slot = infer_slot(item["category"], item.get("tags", []), item.get("search_text", ""))
+        if context.get("late_start") and item.get("category") == "cafe" and preferred_slot == "morning":
+            preferred_slot = "afternoon"
         score = item.get("opinion_count", 0) * 2
         if theme_query:
             score += score_text_match(theme_query, item.get("search_text", "")) * 3
@@ -209,6 +259,7 @@ def select_places(
             score -= 1
         if context.get("pace") == "relaxed" and preferred_slot in {"afternoon", "evening"}:
             score += 1
+        score += style_score(item, preferred_slot, context.get("planning_style", "balanced"))
         scored.append(
             {
                 **item,
@@ -227,6 +278,7 @@ def build_itinerary(
     context: dict | None = None,
 ) -> tuple[list[dict], list[str]]:
     used = set()
+    used_categories: dict[str, int] = {}
     plans = []
     selected_place_ids = []
     slot_groups: dict[str, list[dict]] = {}
@@ -239,20 +291,39 @@ def build_itinerary(
         for slot in slots:
             chosen = None
             for candidate_slot in FALLBACK_ORDER[slot]:
-                for candidate in slot_groups.get(candidate_slot, []):
-                    if candidate["place_id"] not in used:
-                        chosen = candidate
-                        break
+                available = [
+                    (index, candidate)
+                    for index, candidate in enumerate(slot_groups.get(candidate_slot, []))
+                    if candidate["place_id"] not in used
+                ]
+                if available:
+                    available.sort(
+                        key=lambda item: (
+                            used_categories.get(item[1]["category"], 0) * 2 - item[1]["rank_score"],
+                            item[0],
+                        )
+                    )
+                    chosen = available[0][1]
                 if chosen:
                     break
             if not chosen:
-                for candidate in fallback:
-                    if candidate["place_id"] not in used:
-                        chosen = candidate
-                        break
+                available = [
+                    (index, candidate)
+                    for index, candidate in enumerate(fallback)
+                    if candidate["place_id"] not in used
+                ]
+                if available:
+                    available.sort(
+                        key=lambda item: (
+                            used_categories.get(item[1]["category"], 0) * 2 - item[1]["rank_score"],
+                            item[0],
+                        )
+                    )
+                    chosen = available[0][1]
             if not chosen:
                 continue
             used.add(chosen["place_id"])
+            used_categories[chosen["category"]] = used_categories.get(chosen["category"], 0) + 1
             selected_place_ids.append(chosen["place_id"])
             items.append(
                 {
@@ -278,12 +349,75 @@ def build_itinerary(
     return plans, selected_place_ids
 
 
+def infer_lodging_anchor(
+    selected: list[dict],
+    place_ids: list[str],
+    stay_name: str | None,
+    stay_district: str | None,
+    stay_kind: str | None,
+    context: dict,
+) -> dict | None:
+    if stay_name or stay_district:
+        kind = infer_lodging_kind(stay_name, stay_district, stay_kind)
+        notes = []
+        if stay_district:
+            notes.append(f"按用户要求优先住在 {stay_district}")
+        if stay_name:
+            notes.append(f"按用户要求将住宿锚点定为 {stay_name}")
+        if context.get("planning_style") == "local":
+            notes.append("该计划会围绕住宿锚点附近的本地吃喝和夜间活动展开。")
+        return {
+            "kind": kind,
+            "name": stay_name,
+            "district": stay_district,
+            "source": "user",
+            "notes": "；".join(notes) if notes else None,
+        }
+
+    selected_by_id = {item["place_id"]: item for item in selected}
+    district_counts: dict[str, int] = {}
+    anchor_names: list[str] = []
+    for place_id in place_ids:
+        item = selected_by_id.get(place_id)
+        if not item:
+            continue
+        district = item.get("district")
+        if district:
+            district_counts[district] = district_counts.get(district, 0) + 1
+            if len(anchor_names) < 3:
+                anchor_names.append(item["name"])
+
+    if not district_counts:
+        return None
+
+    district = sorted(district_counts.items(), key=lambda item: (-item[1], item[0]))[0][0]
+    notes = [f"自动推断住宿锚点在 {district}，因为大多数入选地点集中在这里。"]
+    if anchor_names:
+        notes.append(f"这一带串联 {', '.join(anchor_names)} 会更顺。")
+    if context.get("planning_style") == "local":
+        notes.append("优先把住宿放在夜间氛围和本地吃喝密度更高的片区。")
+    return {
+        "kind": "district",
+        "name": district,
+        "district": district,
+        "source": "inferred",
+        "notes": " ".join(notes),
+    }
+
+
 def render_markdown(plan: dict) -> str:
     lines = [f"# {plan['title']}", "", f"- 城市: {plan['city']}", f"- 时长: {plan['days']} 天 {plan['nights']} 晚"]
     if plan.get("profile_id"):
         lines.append(f"- Profile: {plan['profile_id']}")
     if plan.get("travel_mode"):
         lines.append(f"- 出行模式: {display_travel_mode(plan['travel_mode'])}")
+    if plan.get("planning_style"):
+        lines.append(f"- 玩法风格: {plan['planning_style']}")
+    if plan.get("lodging_anchor"):
+        lodging_anchor = plan["lodging_anchor"]
+        summary = lodging_anchor.get("name") or lodging_anchor.get("district")
+        if summary:
+            lines.append(f"- 住宿锚点: {summary}")
     if plan.get("themes"):
         lines.append(f"- 主题: {', '.join(plan['themes'])}")
     if plan.get("plan_notes"):
@@ -309,10 +443,15 @@ def main() -> int:
     repo_root = Path(args.repo_root).resolve() if args.repo_root else find_repo_root(Path(__file__))
     if args.nights > args.days:
         raise SystemExit("--nights cannot exceed --days.")
+    if args.plan_id and ("/" in args.plan_id or args.plan_id in {".", ".."}):
+        raise SystemExit("--plan-id cannot contain path separators.")
 
     catalog = build_catalog_structure(repo_root)
     profile = load_profile(repo_root, args.profile_id)
     context = planning_context(profile, args.travel_mode)
+    context["planning_style"] = args.planning_style
+    if args.planning_style == "local":
+        context["plan_notes"].append("本次行程按本地精华玩法编排，优先真实好玩和可重复去的地方，不只堆游客点。")
     selected = select_places(
         catalog,
         city=args.city,
@@ -331,10 +470,27 @@ def main() -> int:
     )
     if not itinerary:
         raise SystemExit("Could not build an itinerary from the available places.")
+    lodging_anchor = infer_lodging_anchor(
+        selected=selected,
+        place_ids=place_ids,
+        stay_name=args.stay_name,
+        stay_district=args.stay_district,
+        stay_kind=args.stay_kind,
+        context=context,
+    )
+    if lodging_anchor and lodging_anchor.get("notes"):
+        context["plan_notes"].append(lodging_anchor["notes"])
 
     now_iso = utc_now_iso()
-    title = args.title or f"{args.city}{args.days}天{args.nights}晚旅行计划"
-    plan_id = stable_id("plan", title, args.city, str(args.days), str(args.nights), ",".join(args.theme))
+    title = args.title or args.plan_id or f"{args.city}{args.days}天{args.nights}晚旅行计划"
+    plan_id = args.plan_id or stable_id(
+        "plan",
+        title,
+        args.city,
+        str(args.days),
+        str(args.nights),
+        ",".join(args.theme),
+    )
     json_path = repo_root / "data" / "plans" / f"{plan_id}.json"
     md_path = repo_root / "data" / "plans" / f"{plan_id}.md"
 
@@ -350,11 +506,13 @@ def main() -> int:
         "days": args.days,
         "profile_id": context.get("profile_id"),
         "travel_mode": context.get("travel_mode"),
+        "planning_style": context.get("planning_style"),
         "nights": args.nights,
         "themes": args.theme,
         "source_refs": sorted(set([*args.source_ref, *derived_source_refs])),
         "place_ids": place_ids,
         "plan_notes": context.get("plan_notes", []),
+        "lodging_anchor": lodging_anchor,
         "itinerary": itinerary,
         "created_at": now_iso,
         "updated_at": now_iso,

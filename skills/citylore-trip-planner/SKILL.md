@@ -31,6 +31,8 @@ Read [references/xiaohongshu-research.md](references/xiaohongshu-research.md) fo
 5. Generate the itinerary.
    - Use `scripts/create_travel_plan.py` with city, day count, night count, and optional themes.
    - If the repository has a traveler profile under `data/profiles/<contributor_id>/`, pass `--profile-id` and `--travel-mode` so the plan can inherit late-start, pacing, and nightlife preferences.
+   - If the user already knows where they want to stay, pass a lodging anchor such as `--stay-district` or `--stay-name`.
+   - If the user wants more than standard tourist highlights, use `--planning-style local`.
 6. Return both the database file paths and the human-readable itinerary.
 
 ## Research Rules
@@ -55,11 +57,14 @@ Generate a 2-day 1-night itinerary:
 
 ```bash
 python3 {baseDir}/scripts/create_travel_plan.py \
+  --plan-id "景德镇3.11 2日游" \
   --city 景德镇 \
   --days 2 \
   --nights 1 \
   --profile-id realRoc \
   --travel-mode companion \
+  --stay-district 珠山区 \
+  --planning-style local \
   --theme pottery \
   --theme coffee
 ```
@@ -70,4 +75,6 @@ python3 {baseDir}/scripts/create_travel_plan.py \
 - The search step is done through MCP tools, not by shelling out from the Python scripts.
 - `ingest_xiaohongshu_batch.py` persists the import batch first, then promotes approved places.
 - `create_travel_plan.py` writes both `data/plans/<plan_id>.json` and `data/plans/<plan_id>.md`.
+- If you want future revisions to overwrite the same file, pass a fixed `--plan-id`.
 - Accommodation constraints only become enforceable once the repository also stores hotel candidates; until then they are preserved as planning notes.
+- Even before hotel data exists, the planner can still anchor the trip to a district or commercial area and use that anchor in the plan notes.

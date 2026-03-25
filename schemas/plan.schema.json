@@ -38,6 +38,9 @@
     "travel_mode": {
       "enum": ["solo", "companion", null]
     },
+    "planning_style": {
+      "enum": ["classic", "balanced", "local", null]
+    },
     "nights": {
       "type": "integer",
       "minimum": 0
@@ -69,6 +72,27 @@
         "type": "string"
       },
       "default": []
+    },
+    "lodging_anchor": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "enum": ["hotel", "district", "commercial-area", "neighborhood", null]
+        },
+        "name": {
+          "type": ["string", "null"]
+        },
+        "district": {
+          "type": ["string", "null"]
+        },
+        "source": {
+          "enum": ["user", "inferred", null]
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
     },
     "itinerary": {
       "type": "array",

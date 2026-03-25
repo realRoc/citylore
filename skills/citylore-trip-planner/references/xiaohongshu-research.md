@@ -10,11 +10,15 @@
 For a destination city, run multiple searches instead of one broad query:
 
 - `城市名 攻略`
+- `城市名 本地人推荐`
 - `城市名 美食`
 - `城市名 咖啡`
 - `城市名 夜市`
 - `城市名 博物馆`
 - `城市名 市集`
+- `城市名 探店`
+- `城市名 工作室`
+- `城市名 街区`
 
 For Jingdezhen-like destinations, add craft-specific terms:
 
@@ -49,3 +53,4 @@ Normalized batch files should contain a top-level `candidates` array. Each candi
 - Keep all extracted material in `imports/xiaohongshu/`
 - Promote only the best city-relevant candidates into canonical places
 - Prefer stable POIs, neighborhoods, markets, museums, parks, and food landmarks
+- When the user wants less touristy plans, over-sample queries that imply local repeat behavior, night walks, local food, side-street coffee, or maker spaces
