@@ -1,0 +1,24 @@
+{
+  "opinion_id": "opn-e26e779e",
+  "place_id": "place-34219221",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。",
+  "body": "攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-e26e779e.md",
+  "visit_date": null,
+  "tags": [
+    "culture",
+    "pottery",
+    "village",
+    "walk"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:38Z",
+  "updated_at": "2026-03-25T05:39:38Z"
+}

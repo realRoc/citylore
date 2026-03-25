@@ -1,0 +1,30 @@
+{
+  "place_id": "place-f4c83a8a",
+  "name": "鐵門咖啡",
+  "aliases": [],
+  "country": "CN",
+  "city": "景德镇",
+  "district": "珠山区",
+  "area_refs": [
+    "area-c778d5f8"
+  ],
+  "category": "cafe",
+  "tags": [
+    "coffee",
+    "market",
+    "morning",
+    "specialty-coffee"
+  ],
+  "address": {
+    "full_text": null,
+    "provider_formatted": null
+  },
+  "coordinates": null,
+  "price_level": null,
+  "source_refs": [
+    "imports/manual/raw/src-884544bb.md"
+  ],
+  "notes": null,
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}

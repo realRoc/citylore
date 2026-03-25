@@ -1,0 +1,31 @@
+{
+  "place_id": "place-hoh-gallery-cce39ad3",
+  "name": "手屋 Hoh Gallery",
+  "aliases": [],
+  "country": "CN",
+  "city": "景德镇",
+  "district": "珠山区",
+  "area_refs": [
+    "area-c778d5f8"
+  ],
+  "category": "cafe",
+  "tags": [
+    "afternoon",
+    "coffee",
+    "design",
+    "gallery",
+    "pottery"
+  ],
+  "address": {
+    "full_text": null,
+    "provider_formatted": null
+  },
+  "coordinates": null,
+  "price_level": null,
+  "source_refs": [
+    "imports/manual/raw/src-hoh-gallery-fd82e3e1.md"
+  ],
+  "notes": null,
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}

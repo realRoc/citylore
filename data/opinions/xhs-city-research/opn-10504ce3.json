@@ -1,0 +1,25 @@
+{
+  "opinion_id": "opn-10504ce3",
+  "place_id": "place-f88047dc",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。",
+  "body": "专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-10504ce3.md",
+  "visit_date": null,
+  "tags": [
+    "daytime",
+    "design",
+    "market",
+    "pottery",
+    "shopping"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:38Z",
+  "updated_at": "2026-03-25T05:39:38Z"
+}

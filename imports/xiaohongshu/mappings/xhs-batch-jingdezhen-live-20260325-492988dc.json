@@ -1,0 +1,162 @@
+{
+  "batch_id": "xhs-batch-jingdezhen-live-20260325-492988dc",
+  "city": "景德镇",
+  "mappings": [
+    {
+      "candidate_id": "xhs-4af1d262",
+      "place_name": "陶溪川文创街区",
+      "status": "promoted",
+      "place_id": "place-f15a3b2a",
+      "opinion_id": "opn-f94bc2d3",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-f94bc2d3.md",
+        "place": "data/places/place-f15a3b2a/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-f94bc2d3.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-faf8f58a",
+      "place_name": "雕塑瓷厂",
+      "status": "promoted",
+      "place_id": "place-f88047dc",
+      "opinion_id": "opn-10504ce3",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-10504ce3.md",
+        "place": "data/places/place-f88047dc/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-10504ce3.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-c8d27149",
+      "place_name": "景德镇中国陶瓷博物馆",
+      "status": "promoted",
+      "place_id": "place-7fdafa02",
+      "opinion_id": "opn-3cc57481",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-3cc57481.md",
+        "place": "data/places/place-7fdafa02/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-3cc57481.json",
+        "area": "data/areas/area-a8f78ccb.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-651c3cd7",
+      "place_name": "三宝村",
+      "status": "promoted",
+      "place_id": "place-34219221",
+      "opinion_id": "opn-e26e779e",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-e26e779e.md",
+        "place": "data/places/place-34219221/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-e26e779e.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-3c2f3334",
+      "place_name": "抚州弄",
+      "status": "promoted",
+      "place_id": "place-cf2f2f32",
+      "opinion_id": "opn-fde285d8",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-fde285d8.md",
+        "place": "data/places/place-cf2f2f32/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-fde285d8.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-e469a1e9",
+      "place_name": "陶阳里历史文化旅游区",
+      "status": "promoted",
+      "place_id": "place-64a3ae42",
+      "opinion_id": "opn-f4dbd357",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-f4dbd357.md",
+        "place": "data/places/place-64a3ae42/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-f4dbd357.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-y-o-caf-a9df96f4",
+      "place_name": "爻 Yáo Café",
+      "status": "promoted",
+      "place_id": "place-y-o-caf-9f9639a0",
+      "opinion_id": "opn-y-o-caf-72ae34d4",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-y-o-caf-72ae34d4.md",
+        "place": "data/places/place-y-o-caf-9f9639a0/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-y-o-caf-72ae34d4.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-hoh-gallery-3439310c",
+      "place_name": "手屋 Hoh Gallery",
+      "status": "promoted",
+      "place_id": "place-hoh-gallery-cce39ad3",
+      "opinion_id": "opn-hoh-gallery-fd82e3e1",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-hoh-gallery-fd82e3e1.md",
+        "place": "data/places/place-hoh-gallery-cce39ad3/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-hoh-gallery-fd82e3e1.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-ed420ef8",
+      "place_name": "乐天市集",
+      "status": "promoted",
+      "place_id": "place-5a17536c",
+      "opinion_id": "opn-382dae02",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-382dae02.md",
+        "place": "data/places/place-5a17536c/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-382dae02.json",
+        "area": null
+      }
+    },
+    {
+      "candidate_id": "xhs-fafc3f87",
+      "place_name": "明清园市集",
+      "status": "promoted",
+      "place_id": "place-83179bb4",
+      "opinion_id": "opn-2ea1e8a6",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-2ea1e8a6.md",
+        "place": "data/places/place-83179bb4/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-2ea1e8a6.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-4a831f62",
+      "place_name": "鐵門咖啡",
+      "status": "promoted",
+      "place_id": "place-f4c83a8a",
+      "opinion_id": "opn-884544bb",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-884544bb.md",
+        "place": "data/places/place-f4c83a8a/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-884544bb.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    },
+    {
+      "candidate_id": "xhs-6e98987b",
+      "place_name": "马尾港",
+      "status": "promoted",
+      "place_id": "place-bffae579",
+      "opinion_id": "opn-0ac5dd64",
+      "paths": {
+        "raw_source": "imports/manual/raw/src-0ac5dd64.md",
+        "place": "data/places/place-bffae579/place.json",
+        "opinion": "data/opinions/xhs-city-research/opn-0ac5dd64.json",
+        "area": "data/areas/area-c778d5f8.json"
+      }
+    }
+  ]
+}

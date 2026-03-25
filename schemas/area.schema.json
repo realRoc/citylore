@@ -1,5 +1,55 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Area",
-  "type": "object"
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "area_id",
+    "name",
+    "type",
+    "country",
+    "city",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "area_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "type": {
+      "type": "string",
+      "enum": ["city", "district", "neighborhood", "poi-cluster"]
+    },
+    "country": {
+      "type": "string",
+      "minLength": 2
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1
+    },
+    "parent_area_id": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
 }

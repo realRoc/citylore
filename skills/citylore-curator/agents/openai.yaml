@@ -1,0 +1,6 @@
+interface:
+  display_name: "CityLore Curator"
+  short_description: "Ingest local recommendations into CityLore"
+  default_prompt: "Use $citylore-curator to ingest a text or audio recommendation into the CityLore repo and rebuild query indexes."
+policy:
+  allow_implicit_invocation: true

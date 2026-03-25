@@ -1,0 +1,25 @@
+{
+  "opinion_id": "opn-hoh-gallery-fd82e3e1",
+  "place_id": "place-hoh-gallery-cce39ad3",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。",
+  "body": "咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-hoh-gallery-fd82e3e1.md",
+  "visit_date": null,
+  "tags": [
+    "afternoon",
+    "coffee",
+    "design",
+    "gallery",
+    "pottery"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}

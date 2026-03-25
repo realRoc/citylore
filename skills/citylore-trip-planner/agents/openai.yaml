@@ -1,0 +1,6 @@
+interface:
+  display_name: "CityLore Trip Planner"
+  short_description: "Import Xiaohongshu city picks and build itineraries"
+  default_prompt: "Use $citylore-trip-planner to research a city with xiaohongshu-mcp, ingest the best places into CityLore, and generate a trip plan for N days."
+policy:
+  allow_implicit_invocation: true

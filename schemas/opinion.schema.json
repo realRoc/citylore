@@ -1,5 +1,94 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Opinion",
-  "type": "object"
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "opinion_id",
+    "place_id",
+    "contributor_id",
+    "source_kind",
+    "source_ref",
+    "body",
+    "tags",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "opinion_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "place_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "contributor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": ["string", "null"]
+    },
+    "summary": {
+      "type": ["string", "null"]
+    },
+    "body": {
+      "type": "string",
+      "minLength": 1
+    },
+    "rating": {
+      "type": ["number", "null"],
+      "minimum": 0,
+      "maximum": 5
+    },
+    "source_kind": {
+      "type": "string",
+      "enum": ["text", "audio", "transcript"]
+    },
+    "source_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "visit_date": {
+      "type": ["string", "null"],
+      "format": "date"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "signals": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "good_for": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "avoid_if": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        }
+      },
+      "required": ["good_for", "avoid_if"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
 }

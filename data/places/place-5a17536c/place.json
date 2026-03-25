@@ -1,0 +1,28 @@
+{
+  "place_id": "place-5a17536c",
+  "name": "乐天市集",
+  "aliases": [],
+  "country": "CN",
+  "city": "景德镇",
+  "district": null,
+  "area_refs": [],
+  "category": "market",
+  "tags": [
+    "design",
+    "market",
+    "shopping",
+    "weekend"
+  ],
+  "address": {
+    "full_text": null,
+    "provider_formatted": null
+  },
+  "coordinates": null,
+  "price_level": null,
+  "source_refs": [
+    "imports/manual/raw/src-382dae02.md"
+  ],
+  "notes": null,
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}

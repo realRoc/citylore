@@ -1,5 +1,132 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Place",
-  "type": "object"
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "place_id",
+    "name",
+    "country",
+    "city",
+    "category",
+    "tags",
+    "source_refs",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "place_id": {
+      "type": "string",
+      "minLength": 3
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "country": {
+      "type": "string",
+      "minLength": 2
+    },
+    "city": {
+      "type": "string",
+      "minLength": 1
+    },
+    "district": {
+      "type": ["string", "null"]
+    },
+    "area_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "category": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "address": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "full_text": {
+          "type": ["string", "null"]
+        },
+        "provider_formatted": {
+          "type": ["string", "null"]
+        }
+      },
+      "required": ["full_text"]
+    },
+    "coordinates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["lat", "lng", "coord_system", "provider"],
+      "properties": {
+        "lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "lng": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "coord_system": {
+          "type": "string",
+          "enum": ["wgs84", "gcj02", "bd09"]
+        },
+        "provider": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provider_place_id": {
+          "type": ["string", "null"]
+        },
+        "confidence": {
+          "type": ["number", "null"],
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "price_level": {
+      "type": ["integer", "null"],
+      "minimum": 0,
+      "maximum": 4
+    },
+    "source_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "notes": {
+      "type": ["string", "null"]
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
 }

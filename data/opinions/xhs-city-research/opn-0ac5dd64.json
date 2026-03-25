@@ -1,0 +1,23 @@
+{
+  "opinion_id": "opn-0ac5dd64",
+  "place_id": "place-bffae579",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。",
+  "body": "多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-0ac5dd64.md",
+  "visit_date": null,
+  "tags": [
+    "dinner",
+    "food",
+    "local"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}

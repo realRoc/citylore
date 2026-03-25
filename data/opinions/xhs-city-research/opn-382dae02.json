@@ -1,0 +1,24 @@
+{
+  "opinion_id": "opn-382dae02",
+  "place_id": "place-5a17536c",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。",
+  "body": "市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-382dae02.md",
+  "visit_date": null,
+  "tags": [
+    "design",
+    "market",
+    "shopping",
+    "weekend"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}

@@ -1,0 +1,357 @@
+{
+  "batch_id": "xhs-batch-jingdezhen-live-20260325-492988dc",
+  "city": "景德镇",
+  "batch_name": "jingdezhen-live-20260325",
+  "candidates": [
+    {
+      "candidate_id": "xhs-4af1d262",
+      "place_name": "陶溪川文创街区",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "market",
+      "tags": [
+        "design",
+        "market",
+        "night-walk",
+        "pottery",
+        "weekend"
+      ],
+      "why_go": "夜游强项最明显，适合把一个完整夜晚留给它。",
+      "body": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。",
+      "priority": 0.99,
+      "source_refs": [
+        {
+          "source_feed_id": "699d91a7000000001a0343b1",
+          "source_title": "偶遇景德镇陶溪川！保姆级夜游指南🌙",
+          "source_author": "海棠"
+        }
+      ],
+      "location_query": "景德镇 陶溪川文创街区"
+    },
+    {
+      "candidate_id": "xhs-faf8f58a",
+      "place_name": "雕塑瓷厂",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "market",
+      "tags": [
+        "daytime",
+        "design",
+        "market",
+        "pottery",
+        "shopping"
+      ],
+      "why_go": "更适合白天逛、买陶瓷，价位跨度大，能淘到性价比高的小物件。",
+      "body": "专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。",
+      "priority": 0.98,
+      "source_refs": [
+        {
+          "source_feed_id": "69193e61000000001902415d",
+          "source_title": "📍景德镇｜陶溪川、雕塑瓷厂怎么选❓附路线📝",
+          "source_author": "胖嘟嘟在路上"
+        }
+      ],
+      "location_query": "景德镇 雕塑瓷厂"
+    },
+    {
+      "candidate_id": "xhs-c8d27149",
+      "place_name": "景德镇中国陶瓷博物馆",
+      "city": "景德镇",
+      "district": "昌江区",
+      "address": null,
+      "category": "museum",
+      "tags": [
+        "culture",
+        "daytime",
+        "museum",
+        "pottery"
+      ],
+      "why_go": "如果第一次来景德镇，这里最适合快速补足陶瓷发展脉络。",
+      "body": "多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。",
+      "priority": 0.97,
+      "source_refs": [
+        {
+          "source_feed_id": "698c18b3000000000b0107ac",
+          "source_title": "景德镇这样逛超省心！不瞎绕路🗺️",
+          "source_author": "偷懒的🐟"
+        }
+      ],
+      "location_query": "景德镇 中国陶瓷博物馆"
+    },
+    {
+      "candidate_id": "xhs-651c3cd7",
+      "place_name": "三宝村",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "walk",
+      "tags": [
+        "culture",
+        "pottery",
+        "village",
+        "walk"
+      ],
+      "why_go": "适合把景德镇的慢逛气质放在第一站，兼顾村落氛围和手作相关空间。",
+      "body": "攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。",
+      "priority": 0.95,
+      "source_refs": [
+        {
+          "source_feed_id": "698c18b3000000000b0107ac",
+          "source_title": "景德镇这样逛超省心！不瞎绕路🗺️",
+          "source_author": "偷懒的🐟"
+        }
+      ],
+      "location_query": "景德镇 三宝村"
+    },
+    {
+      "candidate_id": "xhs-3c2f3334",
+      "place_name": "抚州弄",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "food",
+      "tags": [
+        "food",
+        "local",
+        "snack",
+        "street"
+      ],
+      "why_go": "适合压缩安排成一顿集中吃本地小吃的时段。",
+      "body": "旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；作为城市小吃密集点，适合放在中午或傍晚。",
+      "priority": 0.95,
+      "source_refs": [
+        {
+          "source_feed_id": "699043ac000000001a02c582",
+          "source_title": "两个抠搜女刚从景德镇回来，说点大实话😓",
+          "source_author": "巨巨彭"
+        }
+      ],
+      "location_query": "景德镇 抚州弄"
+    },
+    {
+      "candidate_id": "xhs-e469a1e9",
+      "place_name": "陶阳里历史文化旅游区",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "attraction",
+      "tags": [
+        "culture",
+        "history",
+        "pottery",
+        "walk"
+      ],
+      "why_go": "适合和御窑片区串联，补一段更偏历史肌理的景德镇。",
+      "body": "路线型攻略把陶阳里与御窑景巷串成一段连续动线，旅行反馈帖也把陶阳里景区和御窑博物馆并列为核心打卡点。",
+      "priority": 0.93,
+      "source_refs": [
+        {
+          "source_feed_id": "699043ac000000001a02c582",
+          "source_title": "两个抠搜女刚从景德镇回来，说点大实话😓",
+          "source_author": "巨巨彭"
+        }
+      ],
+      "location_query": "景德镇 陶阳里历史文化旅游区"
+    },
+    {
+      "candidate_id": "xhs-y-o-caf-a9df96f4",
+      "place_name": "爻 Yáo Café",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "cafe",
+      "tags": [
+        "coffee",
+        "design",
+        "morning",
+        "specialty-coffee"
+      ],
+      "why_go": "适合作为咖啡爱好者的早间或下午补给点，且靠近雕塑瓷厂路线。",
+      "body": "咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。",
+      "priority": 0.9,
+      "source_refs": [
+        {
+          "source_feed_id": "68f70760000000000300d022",
+          "source_title": "NO.61那些二来景德镇我推荐的咖啡店们🎈",
+          "source_author": "威尔王Will"
+        }
+      ],
+      "location_query": "景德镇 爻咖啡"
+    },
+    {
+      "candidate_id": "xhs-hoh-gallery-3439310c",
+      "place_name": "手屋 Hoh Gallery",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "cafe",
+      "tags": [
+        "afternoon",
+        "coffee",
+        "design",
+        "gallery",
+        "pottery"
+      ],
+      "why_go": "更像一个器物展览和咖啡结合的复合空间，适合偏审美向的下午。",
+      "body": "咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。",
+      "priority": 0.89,
+      "source_refs": [
+        {
+          "source_feed_id": "68f70760000000000300d022",
+          "source_title": "NO.61那些二来景德镇我推荐的咖啡店们🎈",
+          "source_author": "威尔王Will"
+        }
+      ],
+      "location_query": "景德镇 手屋 Hoh Gallery"
+    },
+    {
+      "candidate_id": "xhs-ed420ef8",
+      "place_name": "乐天市集",
+      "city": "景德镇",
+      "district": null,
+      "address": null,
+      "category": "market",
+      "tags": [
+        "design",
+        "market",
+        "shopping",
+        "weekend"
+      ],
+      "why_go": "独立设计师作品密度高，适合周末白天专门安排一段逛集时间。",
+      "body": "市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。",
+      "priority": 0.88,
+      "source_refs": [
+        {
+          "source_feed_id": "69732a0e000000002800b3a9",
+          "source_title": "景德镇｜2026市集指南",
+          "source_author": "溪有"
+        }
+      ],
+      "location_query": "景德镇 乐天市集"
+    },
+    {
+      "candidate_id": "xhs-fafc3f87",
+      "place_name": "明清园市集",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "market",
+      "tags": [
+        "market",
+        "pottery",
+        "traditional",
+        "weekend"
+      ],
+      "why_go": "比创意市集更偏传统瓷器和工艺故事，适合和雕塑瓷厂路线搭配。",
+      "body": "市集指南把明清园市集定义为传统与现代工艺融合的去处，偏传统瓷器，也适合顺路了解工艺背景。",
+      "priority": 0.83,
+      "source_refs": [
+        {
+          "source_feed_id": "69732a0e000000002800b3a9",
+          "source_title": "景德镇｜2026市集指南",
+          "source_author": "溪有"
+        }
+      ],
+      "location_query": "景德镇 明清园市集"
+    },
+    {
+      "candidate_id": "xhs-4a831f62",
+      "place_name": "鐵門咖啡",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "cafe",
+      "tags": [
+        "coffee",
+        "market",
+        "morning",
+        "specialty-coffee"
+      ],
+      "why_go": "如果你的路线会经过雕塑瓷厂，这是一家高辨识度的人气咖啡档口。",
+      "body": "咖啡推荐帖把铁门咖啡定义为雕塑瓷厂里的人气 TOP 店，适合和雕塑瓷厂同一天安排。",
+      "priority": 0.82,
+      "source_refs": [
+        {
+          "source_feed_id": "68f70760000000000300d022",
+          "source_title": "NO.61那些二来景德镇我推荐的咖啡店们🎈",
+          "source_author": "威尔王Will"
+        }
+      ],
+      "location_query": "景德镇 鐵門咖啡"
+    },
+    {
+      "candidate_id": "xhs-6e98987b",
+      "place_name": "马尾港",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "restaurant",
+      "tags": [
+        "dinner",
+        "food",
+        "local"
+      ],
+      "why_go": "高频出现在攻略型笔记里，适合作为本地菜晚餐候选。",
+      "body": "多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。",
+      "priority": 0.76,
+      "source_refs": [
+        {
+          "source_feed_id": "69bbb2b4000000002202ac44",
+          "source_title": "3-4月去景德镇的姐妹，记得看这篇",
+          "source_author": "暴龙碳水战神"
+        }
+      ],
+      "location_query": "景德镇 马尾港"
+    },
+    {
+      "candidate_id": "xhs-8e565c6d",
+      "place_name": "猫哥大排档",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "restaurant",
+      "tags": [
+        "dinner",
+        "food",
+        "local"
+      ],
+      "why_go": "在攻略型内容中重复出现，适合做本地菜大排档备选。",
+      "body": "路线攻略和春季出行笔记都把猫哥大排档写进标签区，说明它在游客视角里辨识度较高。",
+      "priority": 0.75,
+      "source_refs": [
+        {
+          "source_feed_id": "698c18b3000000000b0107ac",
+          "source_title": "景德镇这样逛超省心！不瞎绕路🗺️",
+          "source_author": "偷懒的🐟"
+        }
+      ],
+      "location_query": "景德镇 猫哥大排档"
+    },
+    {
+      "candidate_id": "xhs-a1a0409d",
+      "place_name": "柒乐乐烤肉",
+      "city": "景德镇",
+      "district": "珠山区",
+      "address": null,
+      "category": "restaurant",
+      "tags": [
+        "bbq",
+        "dinner",
+        "food"
+      ],
+      "why_go": "适合替换本地菜的一顿烧烤晚餐，热度和辨识度都够。",
+      "body": "多篇景德镇攻略把柒乐乐烤肉直接写进标签，说明它是游客常搜的热门餐饮点。",
+      "priority": 0.74,
+      "source_refs": [
+        {
+          "source_feed_id": "69bbb2b4000000002202ac44",
+          "source_title": "3-4月去景德镇的姐妹，记得看这篇",
+          "source_author": "暴龙碳水战神"
+        }
+      ],
+      "location_query": "景德镇 柒乐乐烤肉"
+    }
+  ]
+}

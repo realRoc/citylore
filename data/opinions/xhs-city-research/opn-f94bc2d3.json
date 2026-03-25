@@ -1,0 +1,25 @@
+{
+  "opinion_id": "opn-f94bc2d3",
+  "place_id": "place-f15a3b2a",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。",
+  "body": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-f94bc2d3.md",
+  "visit_date": null,
+  "tags": [
+    "design",
+    "market",
+    "night-walk",
+    "pottery",
+    "weekend"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:38Z",
+  "updated_at": "2026-03-25T05:39:38Z"
+}

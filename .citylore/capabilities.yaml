@@ -1,12 +1,21 @@
 query:
   - nearby-search
   - preference-aware-recommendation
+  - text-filter-query
+  - export-index
 import:
   - xiaohongshu
   - dianping
+  - manual-text
+  - manual-audio
+  - xiaohongshu-city-research
 federation:
   - node-manifest
   - node-discovery
 storage:
   - structured-text
   - database-index-ready
+  - export-catalog
+planning:
+  - city-itinerary
+  - weekend-trip

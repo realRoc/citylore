@@ -1,0 +1,49 @@
+{
+  "contributor_id": "realRoc",
+  "display_name": "realRoc",
+  "home_base": null,
+  "taste_tags": [
+    "citywalk",
+    "coffee",
+    "night-market",
+    "late-start",
+    "comfortable-hotel",
+    "flexible-travel-style"
+  ],
+  "bio": "realRoc 的旅行偏好会随出行模式变化。结伴更重舒适度和夜间体验，个人出行更灵活，按目的地和任务动态调整。",
+  "soul_path": "data/profiles/realRoc/SOUL.md",
+  "travel_preferences": {
+    "default_mode": "companion",
+    "companion": {
+      "late_start_likelihood": "high",
+      "preferred_start_time": "12:00",
+      "pace": "relaxed",
+      "night_activity_preferences": [
+        "night_market",
+        "night_walk"
+      ],
+      "allow_compact_days_when_needed": true,
+      "lodging_preferences": {
+        "minimum_star_rating": 4,
+        "preferred_brands": [
+          "Atour"
+        ],
+        "notes": "结伴出行时，住宿至少亚朵或四星级以上。"
+      },
+      "notes": "结伴出行默认不排早起，尽量把节奏做松，晚上可以安排夜市、夜游或街区散步。"
+    },
+    "solo": {
+      "late_start_likelihood": "variable",
+      "preferred_start_time": null,
+      "pace": "adaptive",
+      "night_activity_preferences": [],
+      "allow_compact_days_when_needed": true,
+      "lodging_preferences": {
+        "minimum_star_rating": null,
+        "preferred_brands": [],
+        "notes": "个人出行没有固定住宿约束。"
+      },
+      "notes": "个人出行没有固定作息、住宿和节奏限制，后续按目的地与旅行目的单独调整。"
+    }
+  }
+}

@@ -1,0 +1,555 @@
+{
+  "generated_at": "2026-03-25T05:39:39Z",
+  "stats": {
+    "place_count": 12,
+    "opinion_count": 12
+  },
+  "places": [
+    {
+      "place_id": "place-34219221",
+      "name": "三宝村",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "walk",
+      "tags": [
+        "culture",
+        "pottery",
+        "village",
+        "walk"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。",
+      "latest_rating": null,
+      "search_text": "三宝村 景德镇 珠山区 walk culture pottery village walk 攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。 攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。"
+    },
+    {
+      "place_id": "place-5a17536c",
+      "name": "乐天市集",
+      "city": "景德镇",
+      "district": null,
+      "category": "market",
+      "tags": [
+        "design",
+        "market",
+        "shopping",
+        "weekend"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。",
+      "latest_rating": null,
+      "search_text": "乐天市集 景德镇 market design market shopping weekend 市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。 市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。"
+    },
+    {
+      "place_id": "place-64a3ae42",
+      "name": "陶阳里历史文化旅游区",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "attraction",
+      "tags": [
+        "culture",
+        "history",
+        "pottery",
+        "walk"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "路线型攻略把陶阳里与御窑景巷串成一段连续动线，旅行反馈帖也把陶阳里景区和御窑博物馆并列为核心打卡点。",
+      "latest_rating": null,
+      "search_text": "陶阳里历史文化旅游区 景德镇 珠山区 attraction culture history pottery walk 路线型攻略把陶阳里与御窑景巷串成一段连续动线，旅行反馈帖也把陶阳里景区和御窑博物馆并列为核心打卡点。 路线型攻略把陶阳里与御窑景巷串成一段连续动线，旅行反馈帖也把陶阳里景区和御窑博物馆并列为核心打卡点。"
+    },
+    {
+      "place_id": "place-7fdafa02",
+      "name": "景德镇中国陶瓷博物馆",
+      "city": "景德镇",
+      "district": "昌江区",
+      "category": "museum",
+      "tags": [
+        "culture",
+        "daytime",
+        "museum",
+        "pottery"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。",
+      "latest_rating": null,
+      "search_text": "景德镇中国陶瓷博物馆 景德镇 昌江区 museum culture daytime museum pottery 多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。 多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。"
+    },
+    {
+      "place_id": "place-83179bb4",
+      "name": "明清园市集",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "market",
+      "tags": [
+        "market",
+        "pottery",
+        "traditional",
+        "weekend"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "市集指南把明清园市集定义为传统与现代工艺融合的去处，偏传统瓷器，也适合顺路了解工艺背景。",
+      "latest_rating": null,
+      "search_text": "明清园市集 景德镇 珠山区 market market pottery traditional weekend 市集指南把明清园市集定义为传统与现代工艺融合的去处，偏传统瓷器，也适合顺路了解工艺背景。 市集指南把明清园市集定义为传统与现代工艺融合的去处，偏传统瓷器，也适合顺路了解工艺背景。"
+    },
+    {
+      "place_id": "place-bffae579",
+      "name": "马尾港",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "restaurant",
+      "tags": [
+        "dinner",
+        "food",
+        "local"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。",
+      "latest_rating": null,
+      "search_text": "马尾港 景德镇 珠山区 restaurant dinner food local 多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。 多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。"
+    },
+    {
+      "place_id": "place-cf2f2f32",
+      "name": "抚州弄",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "food",
+      "tags": [
+        "food",
+        "local",
+        "snack",
+        "street"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；作为城市小吃密集点，适合放在中午或傍晚。",
+      "latest_rating": null,
+      "search_text": "抚州弄 景德镇 珠山区 food food local snack street 旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；作为城市小吃密集点，适合放在中午或傍晚。 旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；作为城市小吃密集点，适合放在中午或傍晚。"
+    },
+    {
+      "place_id": "place-f15a3b2a",
+      "name": "陶溪川文创街区",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "market",
+      "tags": [
+        "design",
+        "market",
+        "night-walk",
+        "pottery",
+        "weekend"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。",
+      "latest_rating": null,
+      "search_text": "陶溪川文创街区 景德镇 珠山区 market design market night-walk pottery weekend 夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。 夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。"
+    },
+    {
+      "place_id": "place-f4c83a8a",
+      "name": "鐵門咖啡",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "cafe",
+      "tags": [
+        "coffee",
+        "market",
+        "morning",
+        "specialty-coffee"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "咖啡推荐帖把铁门咖啡定义为雕塑瓷厂里的人气 TOP 店，适合和雕塑瓷厂同一天安排。",
+      "latest_rating": null,
+      "search_text": "鐵門咖啡 景德镇 珠山区 cafe coffee market morning specialty-coffee 咖啡推荐帖把铁门咖啡定义为雕塑瓷厂里的人气 TOP 店，适合和雕塑瓷厂同一天安排。 咖啡推荐帖把铁门咖啡定义为雕塑瓷厂里的人气 TOP 店，适合和雕塑瓷厂同一天安排。"
+    },
+    {
+      "place_id": "place-f88047dc",
+      "name": "雕塑瓷厂",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "market",
+      "tags": [
+        "daytime",
+        "design",
+        "market",
+        "pottery",
+        "shopping"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。",
+      "latest_rating": null,
+      "search_text": "雕塑瓷厂 景德镇 珠山区 market daytime design market pottery shopping 专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。 专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。"
+    },
+    {
+      "place_id": "place-hoh-gallery-cce39ad3",
+      "name": "手屋 Hoh Gallery",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "cafe",
+      "tags": [
+        "afternoon",
+        "coffee",
+        "design",
+        "gallery",
+        "pottery"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。",
+      "latest_rating": null,
+      "search_text": "手屋 Hoh Gallery 景德镇 珠山区 cafe afternoon coffee design gallery pottery 咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。 咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。"
+    },
+    {
+      "place_id": "place-y-o-caf-9f9639a0",
+      "name": "爻 Yáo Café",
+      "city": "景德镇",
+      "district": "珠山区",
+      "category": "cafe",
+      "tags": [
+        "coffee",
+        "design",
+        "morning",
+        "specialty-coffee"
+      ],
+      "coordinates": null,
+      "opinion_count": 1,
+      "contributors": [
+        "xhs-city-research"
+      ],
+      "latest_summary": "咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。",
+      "latest_rating": null,
+      "search_text": "爻 Yáo Café 景德镇 珠山区 cafe coffee design morning specialty-coffee 咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。 咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。"
+    }
+  ],
+  "opinions": [
+    {
+      "opinion_id": "opn-y-o-caf-72ae34d4",
+      "place_id": "place-y-o-caf-9f9639a0",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。",
+      "body": "咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-y-o-caf-72ae34d4.md",
+      "visit_date": null,
+      "tags": [
+        "coffee",
+        "design",
+        "morning",
+        "specialty-coffee"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:39Z",
+      "updated_at": "2026-03-25T05:39:39Z"
+    },
+    {
+      "opinion_id": "opn-hoh-gallery-fd82e3e1",
+      "place_id": "place-hoh-gallery-cce39ad3",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。",
+      "body": "咖啡推荐帖把手屋写成三宝村里最值得专程去的审美空间，一层器物、半层咖啡、二层展览、三层户外，非常适合放进慢节奏旅行。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-hoh-gallery-fd82e3e1.md",
+      "visit_date": null,
+      "tags": [
+        "afternoon",
+        "coffee",
+        "design",
+        "gallery",
+        "pottery"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:39Z",
+      "updated_at": "2026-03-25T05:39:39Z"
+    },
+    {
+      "opinion_id": "opn-884544bb",
+      "place_id": "place-f4c83a8a",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "咖啡推荐帖把铁门咖啡定义为雕塑瓷厂里的人气 TOP 店，适合和雕塑瓷厂同一天安排。",
+      "body": "咖啡推荐帖把铁门咖啡定义为雕塑瓷厂里的人气 TOP 店，适合和雕塑瓷厂同一天安排。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-884544bb.md",
+      "visit_date": null,
+      "tags": [
+        "coffee",
+        "market",
+        "morning",
+        "specialty-coffee"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:39Z",
+      "updated_at": "2026-03-25T05:39:39Z"
+    },
+    {
+      "opinion_id": "opn-382dae02",
+      "place_id": "place-5a17536c",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。",
+      "body": "市集指南把乐天市集列为最值得去的周末市集之一，特点是设计师作品和独特性更强。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-382dae02.md",
+      "visit_date": null,
+      "tags": [
+        "design",
+        "market",
+        "shopping",
+        "weekend"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:39Z",
+      "updated_at": "2026-03-25T05:39:39Z"
+    },
+    {
+      "opinion_id": "opn-2ea1e8a6",
+      "place_id": "place-83179bb4",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "市集指南把明清园市集定义为传统与现代工艺融合的去处，偏传统瓷器，也适合顺路了解工艺背景。",
+      "body": "市集指南把明清园市集定义为传统与现代工艺融合的去处，偏传统瓷器，也适合顺路了解工艺背景。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-2ea1e8a6.md",
+      "visit_date": null,
+      "tags": [
+        "market",
+        "pottery",
+        "traditional",
+        "weekend"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:39Z",
+      "updated_at": "2026-03-25T05:39:39Z"
+    },
+    {
+      "opinion_id": "opn-0ac5dd64",
+      "place_id": "place-bffae579",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。",
+      "body": "多篇攻略在标签区都会带上马尾港，属于被重复提到的景德镇吃饭点，可以作为首版计划里的晚餐备选。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-0ac5dd64.md",
+      "visit_date": null,
+      "tags": [
+        "dinner",
+        "food",
+        "local"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:39Z",
+      "updated_at": "2026-03-25T05:39:39Z"
+    },
+    {
+      "opinion_id": "opn-fde285d8",
+      "place_id": "place-cf2f2f32",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；作为城市小吃密集点，适合放在中午或傍晚。",
+      "body": "旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；作为城市小吃密集点，适合放在中午或傍晚。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-fde285d8.md",
+      "visit_date": null,
+      "tags": [
+        "food",
+        "local",
+        "snack",
+        "street"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:38Z",
+      "updated_at": "2026-03-25T05:39:38Z"
+    },
+    {
+      "opinion_id": "opn-f94bc2d3",
+      "place_id": "place-f15a3b2a",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。",
+      "body": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-f94bc2d3.md",
+      "visit_date": null,
+      "tags": [
+        "design",
+        "market",
+        "night-walk",
+        "pottery",
+        "weekend"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:38Z",
+      "updated_at": "2026-03-25T05:39:38Z"
+    },
+    {
+      "opinion_id": "opn-f4dbd357",
+      "place_id": "place-64a3ae42",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "路线型攻略把陶阳里与御窑景巷串成一段连续动线，旅行反馈帖也把陶阳里景区和御窑博物馆并列为核心打卡点。",
+      "body": "路线型攻略把陶阳里与御窑景巷串成一段连续动线，旅行反馈帖也把陶阳里景区和御窑博物馆并列为核心打卡点。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-f4dbd357.md",
+      "visit_date": null,
+      "tags": [
+        "culture",
+        "history",
+        "pottery",
+        "walk"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:38Z",
+      "updated_at": "2026-03-25T05:39:38Z"
+    },
+    {
+      "opinion_id": "opn-e26e779e",
+      "place_id": "place-34219221",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。",
+      "body": "攻略笔记把三宝村放在 Day1 起点，另一篇旅行反馈也把它列为景德镇代表性打卡点，适合作为周末行程的轻松开场。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-e26e779e.md",
+      "visit_date": null,
+      "tags": [
+        "culture",
+        "pottery",
+        "village",
+        "walk"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:38Z",
+      "updated_at": "2026-03-25T05:39:38Z"
+    },
+    {
+      "opinion_id": "opn-3cc57481",
+      "place_id": "place-7fdafa02",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。",
+      "body": "多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-3cc57481.md",
+      "visit_date": null,
+      "tags": [
+        "culture",
+        "daytime",
+        "museum",
+        "pottery"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:38Z",
+      "updated_at": "2026-03-25T05:39:38Z"
+    },
+    {
+      "opinion_id": "opn-10504ce3",
+      "place_id": "place-f88047dc",
+      "contributor_id": "xhs-city-research",
+      "title": null,
+      "summary": "专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。",
+      "body": "专门比较雕塑瓷厂和陶溪川的笔记建议白天去雕塑瓷厂，主打可逛可买；咖啡推荐文也把它周边列为咖啡和器具店高密度区域。",
+      "rating": null,
+      "source_kind": "text",
+      "source_ref": "imports/manual/raw/src-10504ce3.md",
+      "visit_date": null,
+      "tags": [
+        "daytime",
+        "design",
+        "market",
+        "pottery",
+        "shopping"
+      ],
+      "signals": {
+        "good_for": [],
+        "avoid_if": []
+      },
+      "created_at": "2026-03-25T05:39:38Z",
+      "updated_at": "2026-03-25T05:39:38Z"
+    }
+  ]
+}

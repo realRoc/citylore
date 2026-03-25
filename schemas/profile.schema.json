@@ -1,5 +1,102 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Profile",
-  "type": "object"
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "contributor_id",
+    "display_name"
+  ],
+  "properties": {
+    "contributor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "display_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "home_base": {
+      "type": ["string", "null"]
+    },
+    "taste_tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "bio": {
+      "type": ["string", "null"]
+    },
+    "soul_path": {
+      "type": ["string", "null"]
+    },
+    "travel_preferences": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "default_mode": {
+          "enum": ["solo", "companion", null]
+        },
+        "companion": {
+          "$ref": "#/$defs/travel_mode_preferences"
+        },
+        "solo": {
+          "$ref": "#/$defs/travel_mode_preferences"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "travel_mode_preferences": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "late_start_likelihood": {
+          "enum": ["low", "medium", "high", "variable", null]
+        },
+        "preferred_start_time": {
+          "type": ["string", "null"]
+        },
+        "pace": {
+          "enum": ["relaxed", "balanced", "compact", "adaptive", null]
+        },
+        "night_activity_preferences": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": []
+        },
+        "allow_compact_days_when_needed": {
+          "type": "boolean"
+        },
+        "lodging_preferences": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "properties": {
+            "minimum_star_rating": {
+              "type": ["number", "null"],
+              "minimum": 0,
+              "maximum": 5
+            },
+            "preferred_brands": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "default": []
+            },
+            "notes": {
+              "type": ["string", "null"]
+            }
+          }
+        },
+        "notes": {
+          "type": ["string", "null"]
+        }
+      }
+    }
+  }
 }

@@ -1,0 +1,24 @@
+{
+  "opinion_id": "opn-3cc57481",
+  "place_id": "place-7fdafa02",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。",
+  "body": "多篇攻略把陶瓷博物馆列入核心日间行程，美食和手作体验类笔记也都明确提到“博物馆值得打卡”。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-3cc57481.md",
+  "visit_date": null,
+  "tags": [
+    "culture",
+    "daytime",
+    "museum",
+    "pottery"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:38Z",
+  "updated_at": "2026-03-25T05:39:38Z"
+}

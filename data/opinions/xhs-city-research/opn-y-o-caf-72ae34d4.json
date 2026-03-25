@@ -1,0 +1,24 @@
+{
+  "opinion_id": "opn-y-o-caf-72ae34d4",
+  "place_id": "place-y-o-caf-9f9639a0",
+  "contributor_id": "xhs-city-research",
+  "title": null,
+  "summary": "咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。",
+  "body": "咖啡专门帖把爻咖啡列为景德镇精品咖啡代表，强调手冲、虹吸壶和烘焙能力，适合给周末路线补一站轻松但高质量的咖啡点。",
+  "rating": null,
+  "source_kind": "text",
+  "source_ref": "imports/manual/raw/src-y-o-caf-72ae34d4.md",
+  "visit_date": null,
+  "tags": [
+    "coffee",
+    "design",
+    "morning",
+    "specialty-coffee"
+  ],
+  "signals": {
+    "good_for": [],
+    "avoid_if": []
+  },
+  "created_at": "2026-03-25T05:39:39Z",
+  "updated_at": "2026-03-25T05:39:39Z"
+}
