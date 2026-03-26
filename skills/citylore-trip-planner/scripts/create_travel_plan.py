@@ -406,34 +406,78 @@ def infer_lodging_anchor(
 
 
 def render_markdown(plan: dict) -> str:
-    lines = [f"# {plan['title']}", "", f"- 城市: {plan['city']}", f"- 时长: {plan['days']} 天 {plan['nights']} 晚"]
+    lines = [f"# {plan['title']}", ""]
+    lines.extend(
+        [
+            "## 行程概览",
+            "",
+            "| 字段 | 内容 |",
+            "| --- | --- |",
+            f"| 城市 | {plan['city']} |",
+            f"| 时长 | {plan['days']} 天 {plan['nights']} 晚 |",
+        ]
+    )
     if plan.get("profile_id"):
-        lines.append(f"- Profile: {plan['profile_id']}")
+        lines.append(f"| Profile | {plan['profile_id']} |")
     if plan.get("travel_mode"):
-        lines.append(f"- 出行模式: {display_travel_mode(plan['travel_mode'])}")
+        lines.append(f"| 出行模式 | {display_travel_mode(plan['travel_mode'])} |")
     if plan.get("planning_style"):
-        lines.append(f"- 玩法风格: {plan['planning_style']}")
+        lines.append(f"| 玩法风格 | {plan['planning_style']} |")
     if plan.get("lodging_anchor"):
         lodging_anchor = plan["lodging_anchor"]
         summary = lodging_anchor.get("name") or lodging_anchor.get("district")
         if summary:
-            lines.append(f"- 住宿锚点: {summary}")
+            lines.append(f"| 住宿锚点 | {summary} |")
     if plan.get("themes"):
-        lines.append(f"- 主题: {', '.join(plan['themes'])}")
-    if plan.get("plan_notes"):
-        lines.append("- 规划备注:")
-        for note in plan["plan_notes"]:
-            lines.append(f"  - {note}")
+        lines.append(f"| 主题 | {', '.join(plan['themes'])} |")
     lines.append("")
+    if plan.get("plan_notes"):
+        lines.append("## 规划备注")
+        lines.append("")
+        for note in plan["plan_notes"]:
+            lines.append(f"- {note}")
+        lines.append("")
     for day in plan["itinerary"]:
         lines.append(f"## Day {day['day']}")
         lines.append("")
+        lines.append(f"> {day['summary']}")
+        lines.append("")
+        lines.append("| 时间段 | 地点 | 区域 | 类型 | 建议停留 | 推荐理由 |")
+        lines.append("| --- | --- | --- | --- | --- | --- |")
         for item in day["items"]:
-            line = f"- {item['slot']}: {item['name']} ({item['category']})"
-            if item.get("district"):
-                line += f" / {item['district']}"
-            lines.append(line)
-            lines.append(f"  理由: {item['reason']}")
+            district = item.get("district") or "-"
+            duration = f"{item['duration_min']} 分钟" if item.get("duration_min") else "-"
+            reason = item["reason"].replace("\n", " ").replace("|", "\\|")
+            lines.append(
+                f"| {item['slot']} | {item['name']} | {district} | {item['category']} | {duration} | {reason} |"
+            )
+        lines.append("")
+    if plan.get("lodging_recommendations"):
+        lines.append("## 住宿推荐")
+        lines.append("")
+        lines.append("| 名称 | 区域 | 定位 | 适合什么情况 | 备注 | 预订链接 |")
+        lines.append("| --- | --- | --- | --- | --- | --- |")
+        for item in plan["lodging_recommendations"]:
+            district = item.get("district") or "-"
+            tier = item.get("tier") or "-"
+            reason = item["reason"].replace("\n", " ").replace("|", "\\|")
+            notes = (item.get("notes") or "-").replace("\n", " ").replace("|", "\\|")
+            booking_ref = item.get("booking_ref")
+            link = f"[查看]({booking_ref})" if booking_ref else "-"
+            lines.append(f"| {item['name']} | {district} | {tier} | {reason} | {notes} | {link} |")
+        lines.append("")
+    if plan.get("food_recommendations"):
+        lines.append("## 美食推荐")
+        lines.append("")
+        lines.append("| 名称 | 区域 | 类型 | 推荐点单/关键词 | 适合什么情况 | 备注 |")
+        lines.append("| --- | --- | --- | --- | --- | --- |")
+        for item in plan["food_recommendations"]:
+            district = item.get("district") or "-"
+            category = item.get("category") or "-"
+            signature = (item.get("signature") or "-").replace("\n", " ").replace("|", "\\|")
+            reason = item["reason"].replace("\n", " ").replace("|", "\\|")
+            notes = (item.get("notes") or "-").replace("\n", " ").replace("|", "\\|")
+            lines.append(f"| {item['name']} | {district} | {category} | {signature} | {reason} | {notes} |")
         lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
