@@ -94,6 +94,85 @@
         }
       }
     },
+    "lodging_recommendations": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "reason"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "district": {
+            "type": ["string", "null"]
+          },
+          "category": {
+            "type": ["string", "null"]
+          },
+          "tier": {
+            "type": ["string", "null"]
+          },
+          "booking_ref": {
+            "type": ["string", "null"]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": ["string", "null"]
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          }
+        }
+      }
+    },
+    "food_recommendations": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "reason"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "district": {
+            "type": ["string", "null"]
+          },
+          "category": {
+            "type": ["string", "null"]
+          },
+          "signature": {
+            "type": ["string", "null"]
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "notes": {
+            "type": ["string", "null"]
+          },
+          "source_refs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "default": []
+          }
+        }
+      }
+    },
     "itinerary": {
       "type": "array",
       "minItems": 1,

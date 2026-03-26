@@ -1,0 +1,214 @@
+{
+  "plan_id": "景德镇4.11 2日游",
+  "title": "景德镇4.11 2日游",
+  "city": "景德镇",
+  "days": 2,
+  "profile_id": "realRoc",
+  "travel_mode": "companion",
+  "planning_style": "local",
+  "nights": 1,
+  "themes": [
+    "pottery",
+    "local-food",
+    "night-walk"
+  ],
+  "source_refs": [
+    "imports/manual/raw/src-10504ce3.md",
+    "imports/manual/raw/src-0ac5dd64.md",
+    "imports/manual/raw/src-e26e779e.md",
+    "imports/manual/raw/src-f94bc2d3.md",
+    "imports/manual/raw/src-fde285d8.md",
+    "https://www.hyatt.com/hyatt-place/zh-CN/jdzzj-hyatt-place-jingdezhen-taoxichuan",
+    "https://www.hyatt.com/unbound-collection/en-US/jdzub-taoxichuan-hotel",
+    "https://jp.trip.com/hotels/jingdezhen-hotel-detail-133539621/atour-hotel-taoyang-north-road-taoxichuan-jingdezhen/",
+    "https://www.xiaohongshu.com/explore/699043ac000000001a02c582?xsec_token=ABGjUQwhkIXrzCA12BkTtmOS96B4kFh9X9bNh4uVe5uJs=&xsec_source=pc_search",
+    "https://www.xiaohongshu.com/explore/69193e61000000001902415d?xsec_token=ABqc3UbzdPRMbo80M8ifiS1mgnwL0V6vK-DNxg0shU62g=&xsec_source=pc_search",
+    "https://www.xiaohongshu.com/explore/699d91a7000000001a0343b1?xsec_token=AB7gZ2QXylARKF1JLro1g1Suwb2f6BgxK68ZaGVbxp5AU=&xsec_source=pc_search",
+    "https://www.xiaohongshu.com/explore/698c18b3000000000b0107ac?xsec_token=ABM-gtNMqhcaxRUrtsRoEGFYs4CBzEvFZMIAnt-c-4xlI=&xsec_source=pc_search",
+    "https://www.xiaohongshu.com/explore/69bbb2b4000000002202ac44?xsec_token=ABRy3I2LYQfyd1EvZtt70csEk8KMUy1AYgdeftugy0088=&xsec_source=pc_search",
+    "https://www.xiaohongshu.com/explore/6937c808000000001e009c7e?xsec_token=ABmt2-IRNvVGV0YeNKM9QMd_CP_U0Qt5XqVfoF-nrJXiU=&xsec_source=pc_search",
+    "https://www.xiaohongshu.com/explore/68f70760000000000300d022?xsec_token=ABpOnZ5vrynI7ROZ2V1MKUoTzarlEOjVDQa2qghCv4WYI=&xsec_source=pc_search"
+  ],
+  "place_ids": [
+    "place-cf2f2f32",
+    "place-f88047dc",
+    "place-f15a3b2a",
+    "place-bffae579",
+    "place-34219221"
+  ],
+  "plan_notes": [
+    "按画像偏好尽量午后启动，建议 12:00 后出门。",
+    "按画像偏好保持轻松节奏，避免高密度连打卡。",
+    "按画像偏好保留夜市、夜游或夜间散步时段。",
+    "住宿偏好：优先品牌 Atour；最低 4 星。",
+    "结伴出行时，住宿至少亚朵或四星级以上。",
+    "结伴出行默认不排早起，尽量把节奏做松，晚上可以安排夜市、夜游或街区散步。",
+    "本次行程按本地精华玩法编排，优先真实好玩和可重复去的地方，不只堆游客点。",
+    "按用户要求优先住在 珠山区；该计划会围绕住宿锚点附近的本地吃喝和夜间活动展开。",
+    "本版为人工精修版，主动减少纯咖啡馆打卡感，换成更能代表景德镇气质的老城小吃街与厂区路线。"
+  ],
+  "lodging_anchor": {
+    "kind": "district",
+    "name": null,
+    "district": "珠山区",
+    "source": "user",
+    "notes": "按用户要求优先住在 珠山区；该计划会围绕住宿锚点附近的本地吃喝和夜间活动展开。"
+  },
+  "lodging_recommendations": [
+    {
+      "name": "景德镇陶溪川陶阳北路亚朵酒店",
+      "district": "珠山区",
+      "category": "hotel",
+      "tier": "4-star",
+      "booking_ref": "https://jp.trip.com/hotels/jingdezhen-hotel-detail-133539621/atour-hotel-taoyang-north-road-taoxichuan-jingdezhen/",
+      "reason": "如果这次结伴出行优先考虑品牌和稳妥，这家最贴合你的画像。Trip.com 当前页把它标成 4 星，且离雕塑瓷厂约 1.22km、离景德镇罗家机场约 8.3km，围绕珠山区这条线走会比较顺。",
+      "notes": "优先级最高的保守选项，适合晚起、夜游、不过度折腾的节奏。",
+      "source_refs": [
+        "https://jp.trip.com/hotels/jingdezhen-hotel-detail-133539621/atour-hotel-taoyang-north-road-taoxichuan-jingdezhen/"
+      ]
+    },
+    {
+      "name": "景德镇陶溪川凯悦嘉轩酒店",
+      "district": "珠山区",
+      "category": "hotel",
+      "tier": "upper-midscale",
+      "booking_ref": "https://www.hyatt.com/hyatt-place/zh-CN/jdzzj-hyatt-place-jingdezhen-taoxichuan",
+      "reason": "如果你更看重晚上出门方便，Hyatt 官方页写明它距离陶溪川文创街区仅 5 分钟步行路程，周围购物和餐饮都很密，适合把夜间活动放进主线。",
+      "notes": "位置导向型选项，夜里回酒店最省心。",
+      "source_refs": [
+        "https://www.hyatt.com/hyatt-place/zh-CN/jdzzj-hyatt-place-jingdezhen-taoxichuan"
+      ]
+    },
+    {
+      "name": "Taoxichuan Hotel",
+      "district": "珠山区",
+      "category": "hotel",
+      "tier": "upscale",
+      "booking_ref": "https://www.hyatt.com/unbound-collection/en-US/jdzub-taoxichuan-hotel",
+      "reason": "如果这趟更偏审美和体验，Taoxichuan Hotel 更像把酒店本身也当成旅程的一部分。Hyatt 官方页写明它就在陶溪川创意文化区内，由 David Chipperfield Architects 设计，配套和空间感都更完整。",
+      "notes": "预算更宽时值得优先考虑。",
+      "source_refs": [
+        "https://www.hyatt.com/unbound-collection/en-US/jdzub-taoxichuan-hotel"
+      ]
+    }
+  ],
+  "food_recommendations": [
+    {
+      "name": "抚州弄",
+      "district": "珠山区",
+      "category": "snack-street",
+      "signature": "冷粉、饺子粑、油条包麻糍、牛骨粉、皮蛋肉饼汤",
+      "reason": "这条线更像景德镇老城的日常味道，不是单个网红店。它适合放在第一天开场，直接把本地辨识度最高的小吃吃一轮。",
+      "notes": "优先作为 Day 1 的午餐和边走边吃主线。",
+      "source_refs": [
+        "imports/manual/raw/src-fde285d8.md",
+        "https://www.xiaohongshu.com/explore/699043ac000000001a02c582?xsec_token=ABGjUQwhkIXrzCA12BkTtmOS96B4kFh9X9bNh4uVe5uJs=&xsec_source=pc_search"
+      ]
+    },
+    {
+      "name": "马尾港",
+      "district": "珠山区",
+      "category": "restaurant",
+      "signature": "本地菜正餐",
+      "reason": "它在攻略型笔记里出现频率很高，适合作为第二天的正餐锚点，补一顿扎实的本地菜，而不是继续吃零碎小吃。",
+      "notes": "更适合正餐，不建议和太多轻量点位硬塞在一起。",
+      "source_refs": [
+        "imports/manual/raw/src-0ac5dd64.md"
+      ]
+    },
+    {
+      "name": "陶辣辣景德大排档",
+      "district": "珠山区",
+      "category": "restaurant",
+      "signature": "本地菜、大排档、甜品",
+      "reason": "小红书本地饭帖直接写到“下高铁第一顿直奔”，并把它放在景德镇本地菜高优先级推荐里，适合当你临时想从抚州弄切换成一顿更完整正餐时的备选。",
+      "notes": "如果马尾港排队或状态不对，可以优先切到这里。",
+      "source_refs": [
+        "https://www.xiaohongshu.com/explore/6937c808000000001e009c7e?xsec_token=ABmt2-IRNvVGV0YeNKM9QMd_CP_U0Qt5XqVfoF-nrJXiU=&xsec_source=pc_search"
+      ]
+    },
+    {
+      "name": "阿婆冷粉",
+      "district": "珠山区",
+      "category": "snack",
+      "signature": "冷粉",
+      "reason": "在返程实话帖里属于被直接点名的景德镇特色小吃线索，适合在抚州弄附近作为定向加单，而不是随机进店。",
+      "notes": "更适合和饺子粑、油条包麻糍这种轻量小吃混搭。",
+      "source_refs": [
+        "https://www.xiaohongshu.com/explore/699043ac000000001a02c582?xsec_token=ABGjUQwhkIXrzCA12BkTtmOS96B4kFh9X9bNh4uVe5uJs=&xsec_source=pc_search"
+      ]
+    },
+    {
+      "name": "季刻",
+      "district": "珠山区",
+      "category": "drink",
+      "signature": "本地奶茶",
+      "reason": "如果你想在返程前补一杯当地人也常提到的轻量收尾，这个名字在小红书本地饭帖里出现得很自然，不是专门做游客点名册的写法。",
+      "notes": "适合作为 Day 2 收尾或返程前带走。",
+      "source_refs": [
+        "https://www.xiaohongshu.com/explore/6937c808000000001e009c7e?xsec_token=ABmt2-IRNvVGV0YeNKM9QMd_CP_U0Qt5XqVfoF-nrJXiU=&xsec_source=pc_search"
+      ]
+    }
+  ],
+  "itinerary": [
+    {
+      "day": 1,
+      "summary": "抚州弄 -> 雕塑瓷厂 -> 陶溪川文创街区",
+      "items": [
+        {
+          "slot": "lunch",
+          "place_id": "place-cf2f2f32",
+          "name": "抚州弄",
+          "district": "珠山区",
+          "category": "food",
+          "duration_min": 90,
+          "reason": "旅行反馈帖把抚州弄和陶溪川、御窑片区并列为必去；它不是单个网红店，而是更能代表老城日常气息的小吃密集带，适合作为周末开场。"
+        },
+        {
+          "slot": "afternoon",
+          "place_id": "place-f88047dc",
+          "name": "雕塑瓷厂",
+          "district": "珠山区",
+          "category": "market",
+          "duration_min": 120,
+          "reason": "专门比较雕塑瓷厂和陶溪川的笔记明确建议白天去雕塑瓷厂，主打可逛可买、器物店和工作室更密，气质比纯游客打卡点更像景德镇本地创作现场。"
+        },
+        {
+          "slot": "evening",
+          "place_id": "place-f15a3b2a",
+          "name": "陶溪川文创街区",
+          "district": "珠山区",
+          "category": "market",
+          "duration_min": 120,
+          "reason": "夜游指南明确把陶溪川定义为亮灯后最值得逛的地方，市集按伞色分区；另一篇选址攻略则建议白天雕塑瓷厂、晚上陶溪川，组合最顺。"
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "summary": "马尾港 -> 三宝村",
+      "items": [
+        {
+          "slot": "lunch",
+          "place_id": "place-bffae579",
+          "name": "马尾港",
+          "district": "珠山区",
+          "category": "restaurant",
+          "duration_min": 90,
+          "reason": "多篇攻略反复带到马尾港，它更适合作为第二天的正餐锚点，补一顿扎实的本地吃饭时间，而不是继续堆轻打卡点。"
+        },
+        {
+          "slot": "afternoon",
+          "place_id": "place-34219221",
+          "name": "三宝村",
+          "district": "珠山区",
+          "category": "walk",
+          "duration_min": 120,
+          "reason": "三宝村更适合放在第二天下午慢慢收尾，它既有村落尺度，也有器物、工作室和自然感，比连续刷馆更符合这次轻松但有内容的景德镇周末。"
+        }
+      ]
+    }
+  ],
+  "created_at": "2026-03-25T09:56:55Z",
+  "updated_at": "2026-03-26T10:20:00Z"
+}

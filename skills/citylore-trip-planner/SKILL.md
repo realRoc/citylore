@@ -57,7 +57,7 @@ Generate a 2-day 1-night itinerary:
 
 ```bash
 python3 {baseDir}/scripts/create_travel_plan.py \
-  --plan-id "景德镇3.11 2日游" \
+  --plan-id "景德镇4.11 2日游" \
   --city 景德镇 \
   --days 2 \
   --nights 1 \
@@ -78,3 +78,4 @@ python3 {baseDir}/scripts/create_travel_plan.py \
 - If you want future revisions to overwrite the same file, pass a fixed `--plan-id`.
 - Accommodation constraints only become enforceable once the repository also stores hotel candidates; until then they are preserved as planning notes.
 - Even before hotel data exists, the planner can still anchor the trip to a district or commercial area and use that anchor in the plan notes.
+- Manually enriched plans may also carry `lodging_recommendations` and `food_recommendations` so the trip file can store concrete hotel choices and specific things to eat alongside the itinerary.
